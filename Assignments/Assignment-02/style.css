@@ -1,0 +1,68 @@
+ :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+        }
+
+        /* Hero Banner Styling */
+        .hero-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            min-height: 80vh;
+        }
+
+        /* Category Tile Card Hover Effects */
+        .category-tile {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            height: 220px;
+            cursor: pointer;
+        }
+
+        .category-tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .category-tile:hover img {
+            transform: scale(1.1);
+        }
+
+        .category-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        .category-tile:hover .category-overlay {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Product Card Styling */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+
+        .product-img-wrapper {
+            height: 240px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+        }
+
+        .product-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
