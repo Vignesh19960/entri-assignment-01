@@ -1,0 +1,42 @@
+           body {
+               font-family: Arial, sans-serif;
+               background: #f4f4f4;
+               text-align: center;
+               padding: 40px;
+           }
+
+           #quiz-container {
+               background: white;
+               max-width: 600px;
+               margin: auto;
+               padding: 30px;
+               border-radius: 10px;
+           
+            }
+
+           #options button,
+           #next-btn,
+           #restart-btn {
+               width: 100%;
+               padding: 12px;
+               margin: 8px 0;
+               cursor: pointer;
+         
+            }
+
+           .correct {
+               background-color: green;
+               color: white;
+          
+            }
+
+           .wrong {
+               background-color: red;
+               color: white;
+           
+            }
+
+           .hidden {
+               display: none;
+           
+            }
